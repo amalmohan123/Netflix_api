@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix/helpers/colors/colors.dart';
@@ -46,7 +44,7 @@ class DownloadsScreen extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             Text(
               'Introducing Downloads for You',
               style: GoogleFonts.montserrat(
@@ -63,7 +61,7 @@ class DownloadsScreen extends StatelessWidget {
             ),
             height25,
             height10,
-            Container(
+            SizedBox(
               height: size.height * .32,
               width: size.height * .32,
               child: Stack(
@@ -71,9 +69,25 @@ class DownloadsScreen extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     backgroundColor: circleColor,
-                    radius: 110,
+                    radius: 115,
                   ),
-                  DownloadImageWidgets(size: size, imageList: imageList)
+                  DownloadImageWidgets(
+                    size: Size(size.width * .28, size.height * .22),
+                    imageList: imageList[0],
+                    margin: const EdgeInsets.only(left: 110, bottom: 10),
+                    angle: 20,
+                  ),
+                  DownloadImageWidgets(
+                    size: Size(size.width * .28, size.height * .22),
+                    imageList: imageList[1],
+                    margin: const EdgeInsets.only(right: 110, bottom: 10),
+                    angle: -20,
+                  ),
+                  DownloadImageWidgets(
+                    size: Size(size.width * .3, size.height * .22),
+                    imageList: imageList[2],
+                    margin: const EdgeInsets.only(bottom: 2),
+                  ),
                 ],
               ),
             ),
@@ -99,4 +113,3 @@ class DownloadsScreen extends StatelessWidget {
     );
   }
 }
-

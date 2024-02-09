@@ -7,25 +7,32 @@ class DownloadImageWidgets extends StatelessWidget {
     super.key,
     required this.size,
     required this.imageList,
+    this.angle = 0,
+    required this.margin,
   });
 
   final Size size;
-  final List imageList;
+  final double angle;
+  final String imageList;
+  final EdgeInsets margin;
 
   @override
   Widget build(BuildContext context) {
     return Transform.rotate(
-      angle: 20 * pi / 180,
+      angle: angle * pi / 180,
       child: Container(
-        width: size.width * .28,
-        height: size.height * .195,
+        margin: margin,
+        width: size.width,
+        height: size.height,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(5),
-            image: DecorationImage(
-              image: NetworkImage(
-                imageList[0],
-              ),
-            )),
+          borderRadius: BorderRadius.circular(5),
+          image: DecorationImage(
+            image: NetworkImage(
+              imageList,
+            ),
+            fit: BoxFit.cover
+          ),
+        ),
       ),
     );
   }
