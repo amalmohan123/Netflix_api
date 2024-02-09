@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:netflix/helpers/colors/constants.dart';
+import 'package:netflix/helpers/constants.dart';
 
 class AppBarWidgets extends StatelessWidget {
   const AppBarWidgets({super.key, required this.appBarTittle});

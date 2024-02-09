@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:netflix/helpers/colors/colors.dart';
-import 'package:netflix/helpers/colors/constants.dart';
+import 'package:netflix/helpers/colors.dart';
+import 'package:netflix/helpers/constants.dart';
 import 'package:netflix/view/downloads/widgets/image_widgets.dart';
 import 'package:netflix/view/widgets/app_bar_widgets.dart';
 import 'package:netflix/view/widgets/custom_button_widget.dart';
@@ -59,8 +59,7 @@ class DownloadsScreen extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            height25,
-            height10,
+            height15,
             SizedBox(
               height: size.height * .32,
               width: size.height * .32,
@@ -69,29 +68,29 @@ class DownloadsScreen extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     backgroundColor: circleColor,
-                    radius: 115,
+                    radius: 117,
                   ),
                   DownloadImageWidgets(
                     size: Size(size.width * .28, size.height * .22),
                     imageList: imageList[0],
-                    margin: const EdgeInsets.only(left: 110, bottom: 10),
-                    angle: 20,
+                    margin: const EdgeInsets.only(left: 130, bottom: 10),
+                    angle: 22,
                   ),
                   DownloadImageWidgets(
                     size: Size(size.width * .28, size.height * .22),
                     imageList: imageList[1],
-                    margin: const EdgeInsets.only(right: 110, bottom: 10),
-                    angle: -20,
+                    margin: const EdgeInsets.only(right: 130, bottom: 10),
+                    angle: -22,
                   ),
                   DownloadImageWidgets(
-                    size: Size(size.width * .3, size.height * .22),
+                    size: Size(size.width * .3, size.height * .24),
                     imageList: imageList[2],
-                    margin: const EdgeInsets.only(bottom: 2),
+                    margin: const EdgeInsets.only(top: 10),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 1),
+            const SizedBox(height: 45),
             CoustomButtonWidget(
               textTitle: 'Set Up',
               buttonColor: blueColor,

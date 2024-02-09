@@ -25,7 +25,7 @@ class DownloadImageWidgets extends StatelessWidget {
         width: size.width,
         height: size.height,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(10),
           image: DecorationImage(
             image: NetworkImage(
               imageList,
