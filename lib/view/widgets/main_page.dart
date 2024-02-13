@@ -4,7 +4,7 @@ import 'package:netflix/view/downloads/downloads.dart';
 import 'package:netflix/view/fast_laugh/fast_laugh.dart';
 import 'package:netflix/view/home/home.dart';
 import 'package:netflix/view/hot_and_new/hot_and_new.dart';
-import 'package:netflix/view/search/search.dart';
+import 'package:netflix/view/search/search_idle.dart';
 import 'package:netflix/view/widgets/bottom_nav_bar.dart';
 
 class MainPageWidgets extends StatelessWidget {
@@ -14,7 +14,7 @@ class MainPageWidgets extends StatelessWidget {
     const HomeScreen(),
     const HotAndNew(),
     const FastLaughScreen(),
-    const SearchScreen(),
+    const SearchIdleWidget(),
     DownloadsScreen()
   ];
 
