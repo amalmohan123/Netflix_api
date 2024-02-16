@@ -26,10 +26,6 @@ class SearchIdleWidget extends StatelessWidget {
                     color: Colors.grey.shade600,
                     size: 25,
                   ),
-
-
-
-                  
                   suffixIcon: const Icon(
                     CupertinoIcons.xmark_circle,
                     color: Colors.grey,
@@ -44,7 +40,7 @@ class SearchIdleWidget extends StatelessWidget {
                     color: whiteColor,
                     fontSize: 26,
                     fontWeight: FontWeight.bold),
-              )
+              ),
             ],
           ),
         ),
