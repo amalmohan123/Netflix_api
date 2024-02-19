@@ -90,12 +90,6 @@ class DownloadsScreen extends StatelessWidget {
                 ],
               ),
             ),
-
-
-
-
-
-            
             const SizedBox(height: 45),
             CoustomButtonWidget(
               textTitle: 'Set Up',

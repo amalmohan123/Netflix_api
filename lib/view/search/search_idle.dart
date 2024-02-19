@@ -1,12 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:netflix/helpers/colors.dart';
 import 'package:netflix/helpers/constants.dart';
+import 'package:netflix/view/search/widgets/search_widgets.dart';
 
 class SearchIdleWidget extends StatelessWidget {
   const SearchIdleWidget({super.key});
 
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,13 +36,7 @@ class SearchIdleWidget extends StatelessWidget {
                 ),
               ),
               height10,
-              Text(
-                'Top Searches',
-                style: GoogleFonts.montserrat(
-                    color: whiteColor,
-                    fontSize: 26,
-                    fontWeight: FontWeight.bold),
-              ),
+              SearchWidget(),
             ],
           ),
         ),
