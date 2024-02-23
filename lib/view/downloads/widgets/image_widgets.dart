@@ -22,7 +22,7 @@ class DownloadImageWidgets extends StatelessWidget {
       angle: angle * pi / 180,
       child: Container(
         margin: margin,
-        width: size.width,
+        width: size.width,                                     
         height: size.height,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),

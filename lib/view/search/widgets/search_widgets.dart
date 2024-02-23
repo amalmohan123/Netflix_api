@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:netflix/helpers/colors.dart';
 import 'package:netflix/helpers/constants.dart';
 import 'package:netflix/view/search/widgets/search_list_tile.dart';
 import 'package:netflix/view/search/widgets/search_title.dart';
@@ -21,7 +19,6 @@ class SearchWidget extends StatelessWidget {
         height10,
         Expanded(
           child: ListView.separated(
-              // shrinkWrap: true,
               itemBuilder: (context, index) => const SearchListTile(),
               separatorBuilder: (context, index) => height10,
               itemCount: 12),
