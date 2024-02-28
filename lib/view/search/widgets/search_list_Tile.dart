@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/helpers/constants.dart';
-import 'package:netflix/view/search/widgets/search_widgets.dart';
+import 'package:netflix/view/search/widgets/search_widgets_.dart';
+
 
 class SearchListTile extends StatelessWidget {
   const SearchListTile({super.key});
