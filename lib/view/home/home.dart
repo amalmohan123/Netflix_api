@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix/view/home/widgets/custom_carrd.dart';
 import 'package:netflix/view/widgets/mian_card.dart';
 import 'package:netflix/view/widgets/mian_title.dart';
 
@@ -12,16 +13,16 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
         child: ListView(
           children: [
-            Container(
-              color: Colors.amber,
-              width: double.infinity,
-              height: size.height * .90,
-              child: const Stack(
-                children: [
-                  
-                ],
-              ),
-            ),
+            // Container(
+            //   color: Colors.amber,
+            //   width: double.infinity,
+            //   height: size.height * .90,
+            //   child: const Stack(
+            //     children: [
+
+            //     ],
+            //   ),
+            // ),
             const MainTitle(
               title: 'Realease in the past year',
             ),
@@ -48,7 +49,9 @@ class HomeScreen extends StatelessWidget {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 10,
-                itemBuilder: (context, index) => const MainCard(),
+                itemBuilder: (context, index) => CoustomCard(
+                  index: index,
+                ),
               ),
             ),
             const MainTitle(title: 'Trending Now'),
@@ -61,7 +64,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             const MainTitle(title: 'Trending Now'),
-            SizedBox( 
+            SizedBox(
               height: size.height * .22,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
