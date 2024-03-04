@@ -11,8 +11,17 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: ListView(
-
           children: [
+            Container(
+              color: Colors.amber,
+              width: double.infinity,
+              height: size.height * .90,
+              child: const Stack(
+                children: [
+                  
+                ],
+              ),
+            ),
             const MainTitle(
               title: 'Realease in the past year',
             ),
@@ -24,6 +33,7 @@ class HomeScreen extends StatelessWidget {
                 itemBuilder: (context, index) => const MainCard(),
               ),
             ),
+            const MainTitle(title: 'Top 10 TV Shows in india Today'),
             SizedBox(
               height: size.height * .22,
               child: ListView.builder(
@@ -32,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                 itemBuilder: (context, index) => const MainCard(),
               ),
             ),
-             const MainTitle(title: 'Top 10 TV Shows in india Today'),
+            const MainTitle(title: 'Trending Now'),
             SizedBox(
               height: size.height * .22,
               child: ListView.builder(
@@ -41,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                 itemBuilder: (context, index) => const MainCard(),
               ),
             ),
-             const MainTitle(title: 'Trending Now'),
+            const MainTitle(title: 'Trending Now'),
             SizedBox(
               height: size.height * .22,
               child: ListView.builder(
@@ -50,17 +60,8 @@ class HomeScreen extends StatelessWidget {
                 itemBuilder: (context, index) => const MainCard(),
               ),
             ),
-             const MainTitle(title: 'Trending Now'),
-            SizedBox(
-              height: size.height * .22,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: 10,
-                itemBuilder: (context, index) => const MainCard(),
-              ),
-            ),
-             const MainTitle(title: 'Trending Now'),
-            SizedBox(
+            const MainTitle(title: 'Trending Now'),
+            SizedBox( 
               height: size.height * .22,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
