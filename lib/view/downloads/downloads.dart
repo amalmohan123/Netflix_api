@@ -100,6 +100,7 @@ class DownloadsScreen extends StatelessWidget {
             ),
             height15,
             CoustomButtonWidget(
+              
               textTitle: 'See What You Can Download',
               buttonColor: downloadButton,
               onPressed: () {},

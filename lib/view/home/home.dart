@@ -10,19 +10,29 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      // appBar: AppBar(
+      //   toolbarHeight: size.height * .06,
+      //   backgroundColor: Colors.transparent,
+      //   elevation: 0,
+      // ),
       body: SafeArea(
         child: ListView(
           children: [
-            // Container(
-            //   color: Colors.amber,
-            //   width: double.infinity,
-            //   height: size.height * .90,
-            //   child: const Stack(
-            //     children: [
-
-            //     ],
-            //   ),
-            // ),
+            Stack(
+              children: [
+                Container(
+                  width: double.infinity,
+                  height: size.height * .80,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: NetworkImage(
+                          'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1636999411'),
+                    ),
+                  ),
+                ),
+              ],
+            ),
             const MainTitle(
               title: 'Realease in the past year',
             ),
