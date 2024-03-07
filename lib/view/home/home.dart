@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:netflix/helpers/colors.dart';
+import 'package:netflix/helpers/constants.dart';
 import 'package:netflix/view/home/widgets/custom_carrd.dart';
 import 'package:netflix/view/widgets/mian_card.dart';
 import 'package:netflix/view/widgets/mian_title.dart';
@@ -31,6 +33,64 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
+                Positioned(
+                  bottom: 15,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      const Column(
+                        children: [
+                          Icon(
+                            Icons.add,
+                            color: whiteColor,
+                          ),
+                          Text(
+                            'MyList',
+                            style: TextStyle(color: whiteColor),
+                          ),
+                        ],
+                      ),
+                      Container(
+                        width: size.width * .3,
+                        height: size.width * .1,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4),
+                          color: whiteColor,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.play_arrow,
+                              size: size.width * .08,
+                            ),
+                            width10,
+                            Text(
+                              'Play',
+                              style: TextStyle(
+                                fontSize: size.height * .023,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            width5,
+                          ],
+                        ),
+                      ),
+                      const Column(
+                        children: [
+                          Icon(
+                            Icons.info_outline,
+                            color: whiteColor,
+                          ),
+                          Text(
+                            'Info',
+                            style: TextStyle(color: whiteColor),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
             const MainTitle(
@@ -59,9 +119,7 @@ class HomeScreen extends StatelessWidget {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 10,
-                itemBuilder: (context, index) => CoustomCard(
-                  index: index,
-                ),
+                itemBuilder: (context, index) => CoustomCard(index: index),
               ),
             ),
             const MainTitle(title: 'Trending Now'),
