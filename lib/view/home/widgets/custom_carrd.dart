@@ -36,6 +36,8 @@ class CoustomCard extends StatelessWidget {
           ),
           Positioned(
             bottom: -22,
+
+            
             left: -1,
             child: BorderedText(
               strokeColor: whiteColor,
@@ -45,7 +47,6 @@ class CoustomCard extends StatelessWidget {
                 style: const TextStyle(
                   // decoration: TextDecoration.none,
                   color: blackColor,
-
                   fontSize: 105,
                 ),
               ),
