@@ -21,6 +21,9 @@ class CoustomCard extends StatelessWidget {
               width25,
               width15,
               Container(
+
+
+                
                 height: size.height * .22,
                 width: size.width * .3,
                 // width: 100,
@@ -36,8 +39,6 @@ class CoustomCard extends StatelessWidget {
           ),
           Positioned(
             bottom: -22,
-
-            
             left: -1,
             child: BorderedText(
               strokeColor: whiteColor,
