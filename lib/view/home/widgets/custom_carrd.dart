@@ -21,12 +21,8 @@ class CoustomCard extends StatelessWidget {
               width25,
               width15,
               Container(
-
-
-                
                 height: size.height * .22,
                 width: size.width * .3,
-                // width: 100,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   image: const DecorationImage(

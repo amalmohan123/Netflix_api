@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:netflix/helpers/colors.dart';
-import 'package:netflix/helpers/constants.dart';
 import 'package:netflix/view/home/widgets/custom_carrd.dart';
 import 'package:netflix/view/home/widgets/main_poster.dart';
 import 'package:netflix/view/widgets/mian_card.dart';
@@ -13,11 +11,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      // appBar: AppBar(
-      //   toolbarHeight: size.height * .06,
-      //   backgroundColor: Colors.transparent,
-      //   elevation: 0,
-      // ),
       body: SafeArea(
         child: ListView(
           children: [
