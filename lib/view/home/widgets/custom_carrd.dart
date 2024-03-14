@@ -37,8 +37,8 @@ class CoustomCard extends StatelessWidget {
             bottom: -22,
             left: -1,
             child: BorderedText(
-              strokeColor: whiteColor,
-              strokeWidth: 5,
+              strokeColor: Colors.grey.shade300,
+              strokeWidth: 7.5,
               child: Text(
                 "${index + 1}",
                 style: const TextStyle(
