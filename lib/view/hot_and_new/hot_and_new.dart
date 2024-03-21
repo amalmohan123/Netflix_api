@@ -7,10 +7,11 @@ class HotAndNew extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-          child: Text(
-        'adad',
-        style: TextStyle(color: Colors.white),
-      )),
+        child: Text(
+          'adad',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
     );
   }
 }
