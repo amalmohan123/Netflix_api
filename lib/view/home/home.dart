@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:netflix/helpers/colors.dart';
+import 'package:netflix/helpers/constants.dart';
 import 'package:netflix/view/home/widgets/custom_carrd.dart';
 import 'package:netflix/view/home/widgets/main_poster.dart';
 import 'package:netflix/view/widgets/mian_card.dart';
@@ -86,28 +87,72 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   scrollNotifier.value == true
-                      ? Container(
+                      ? AnimatedContainer(
+                          duration: const Duration(milliseconds: 1000),
+                          decoration: BoxDecoration(
+                            color: Colors.black.withOpacity(0.1),
+                          ),
                           width: double.infinity,
-                          height: size.height * .08,
-                          color: blackColor,
+                          height: size.height * .105,
                           child: Column(
                             children: [
                               Row(
                                 children: [
+                                  width5,
                                   Padding(
-                                    padding: const EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: Image.network(
                                       'https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456',
-                                      width: size.width * 0.092,
-                                      height: size.height * 0.055,
+                                      width: size.width * 0.090,
+                                      height: size.height * 0.045,
                                     ),
                                   ),
+                                  const Spacer(),
+                                  const Icon(
+                                    Icons.cast,
+                                    color: whiteColor,
+                                    size: 25,
+                                  ),
+                                  width20,
+                                  Container(
+                                    width: 28,
+                                    height: 28,
+                                    color: Colors.blue,
+                                  ),
+                                  width10
                                 ],
                               ),
+                              const Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Text(
+                                    "TV Shows",
+                                    style: TextStyle(
+                                        color: whiteColor,
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 18),
+                                  ),
+                                  Text(
+                                    "Movies",
+                                    style: TextStyle(
+                                        color: whiteColor,
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 18),
+                                  ),
+                                  Text(
+                                    "Categories",
+                                    style: TextStyle(
+                                        color: whiteColor,
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 18),
+                                  ),
+                                ],
+                              )
                             ],
                           ),
                         )
-                      : const SizedBox()
+                      : const SizedBox(),
                 ],
               ),
             );
