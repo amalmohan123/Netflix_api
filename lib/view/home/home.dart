@@ -49,17 +49,18 @@ class HomeScreen extends StatelessWidget {
                       ),
                       const MainTitle(title: 'Top 10 TV Shows in india Today'),
                       SizedBox(
-                        height: size.height * .22,
+                        height: size.height * .22, 
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
                           itemBuilder: (context, index) => const MainCard(),
                         ),
-                      ),
+                      ),   
                       const MainTitle(title: 'Trending Now'),
                       SizedBox(
+                        
                         height: size.height * .22,
-                        child: ListView.builder(
+                        child: ListView.builder(  
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
                           itemBuilder: (context, index) =>

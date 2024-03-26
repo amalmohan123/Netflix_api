@@ -48,7 +48,10 @@ class MainPosterWidget extends StatelessWidget {
                 ),
                 TextButton.icon(
                   onPressed: () {},
-                  style: ButtonStyle(
+                  style: ButtonStyle(  
+
+
+                    
                     backgroundColor: MaterialStateProperty.all(whiteColor),
                     iconColor: MaterialStateProperty.all(blackColor),
                     shape: MaterialStateProperty.all(
