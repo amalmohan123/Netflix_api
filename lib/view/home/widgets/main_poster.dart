@@ -49,9 +49,6 @@ class MainPosterWidget extends StatelessWidget {
                 TextButton.icon(
                   onPressed: () {},
                   style: ButtonStyle(  
-
-
-                    
                     backgroundColor: MaterialStateProperty.all(whiteColor),
                     iconColor: MaterialStateProperty.all(blackColor),
                     shape: MaterialStateProperty.all(
@@ -60,10 +57,11 @@ class MainPosterWidget extends StatelessWidget {
                       ),
                     ),
                   ),
+                  
                   icon: const Icon(Icons.play_arrow),
                   label: const Text(
                     'Play',
-                    style: TextStyle(color: blackColor),
+                    style: TextStyle(color: blackColor), 
                   ),
                 ),
                 const Column(

@@ -33,6 +33,7 @@ class CoustomButtonWidget extends StatelessWidget {
         onPressed: onPressed,
         child: Text(
           textTitle,
+          
           style: TextStyle( 
             color: textColor,
             fontWeight: FontWeight.bold,
