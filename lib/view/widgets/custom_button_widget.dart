@@ -30,8 +30,6 @@ class CoustomButtonWidget extends StatelessWidget {
           ),
           backgroundColor: MaterialStateProperty.all(buttonColor),
         ),
-
-         
          
         onPressed: onPressed,
         child: Text(
